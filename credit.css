@@ -1,0 +1,60 @@
+body{
+    background: url(./background.jpg);
+    color: #DDE;
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px;
+    height: calc(100vh - 5px);
+    font-family: monospace;
+    text-align: center;
+    overflow-y: hidden;
+    user-select: none;
+}
+#div{
+    display: fixed;
+    animation-name: speed;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+@keyframes slide {
+ 0%{
+    top: 105vh
+}
+ 100%{
+     top: -1500px
+ }
+}
+:any-link{
+    color: #DDE;
+    text-decoration: none;
+}
+
+#home{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(241, 241, 241, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid white 1px;
+}
+#home a{
+    padding: 5px;
+    display: flex;
+}
+#home img{
+    background-color: #ADADAD;
+    filter: invert(100%);
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+#home img:hover{
+    background-color: #CCC;
+}

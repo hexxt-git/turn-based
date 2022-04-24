@@ -1,0 +1,139 @@
+body{
+    background: url(./background.jpg);
+    color: #DDE;
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0px;
+    height: calc(100vh - 5px);
+    font-family: monospace;
+    user-select: none;
+}
+#div{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#characters{
+    background: rgba(241, 241, 241, 0.5);
+    backdrop-filter: blur(3px);
+    width: auto;
+    height: auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 40px 40px;
+    border-radius: 5px;
+    border: solid white 1px;
+}
+.character{
+    background-color: #151515F7;
+    width: 200px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#p1{
+    border-right: solid #151515F7 3px;
+
+}
+#p1NameIn, #p2NameIn{
+    height: 15px;
+    width: 100px;
+}
+.input{
+    padding: 3px;
+    text-align: center;
+    background-color: #111;
+}
+.player{
+    padding: 3px;
+    text-align: center;
+    background-color: #46D;
+}
+#p1Type, #p2Type{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+.type{
+    border-radius: 3px;
+    background-color: #444;
+}
+.selectedType{
+    border-radius: 3px;
+    background-color: #46D;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.buttons div{
+    padding: 5px 13px 5px 13px;
+    background-color: #444;
+}
+.display img{
+    width: 95%;
+    border: solid black 3px;
+    border-radius: 3px;
+}
+#submit{
+    grid-column: 1/3;
+    background-color: #111;
+    text-align: center;
+    border-top: solid #151515F7 3px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#start{
+    grid-column: 1/3;
+    background-color: #111;
+    text-align: center;
+    border-top: solid #151515F7 3px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#start:any-link{
+    color: #DDE;
+    text-decoration: none;
+}
+.click:hover, .type:hover, #submit:hover, #start:hover{
+    background-color: #222;
+}
+.click:active, .type:active, #submit:active, #start:active, .selectedType:active{
+    background-color: #111;
+}
+
+#home{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(241, 241, 241, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid white 1px;
+}
+#home a{
+    padding: 5px;
+    display: flex;
+}
+#home img{
+    background-color: #ADADAD;
+    filter: invert(100%);
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+#home img:hover{
+    background-color: #CCC;
+}

@@ -1,0 +1,64 @@
+body{
+    background: url(./background.jpg);
+    color: #DDE;
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px;
+    height: calc(100vh - 5px);
+    font-family: monospace;
+    user-select: none;
+}
+#name{
+    background: rgba(241, 241, 241, 0.5);
+    backdrop-filter: blur(3px);
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 3px;
+    border: solid white 1px;
+}
+#name div{
+    padding: 20px 40px 20px 40px;
+    border-radius: 3px;
+    width: 75vw;
+    text-align: center;
+}
+#index{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#indexButtons{
+    background: rgba(241, 241, 241, 0.5);
+    backdrop-filter: blur(3px);
+    width: auto;
+    display: flex;
+    padding: 35px 20px 50px 20px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    gap: 10px;
+    border: solid white 1px;
+}
+.indexBtn{
+    background-color: #151515F7;
+    width: 350px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 3px;
+}
+.indexBtn:hover{
+    background-color: #222;
+}
+.indexBtn:active{
+    color: #BBB;
+    background-color: #020202;
+}
+.indexBtn:any-link{
+    color: #EEE;
+    text-decoration: none;
+}
