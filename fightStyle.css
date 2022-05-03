@@ -1,12 +1,14 @@
 body{
     background-color: #151515;
+    backdrop-filter: blur(2px);
     color: #EEE;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     margin: 0px;
     font-family: monospace;
     user-select: none;
+    overflow: hidden;
 }
 #div{
     display: grid;
@@ -118,7 +120,7 @@ body{
     border: none;
     border-radius: 2px;
     font-family: monospace;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bolder;
 }
 .button:hover{
@@ -132,7 +134,7 @@ body{
     grid-row: 1/ 2;
     grid-column: 2/ 3;
     background-color: rgb(71, 147, 69);
-    font-size: 15px;
+    font-size: 20px;
     overflow-y: scroll;
     border-left: solid #DDE 1px;
 }

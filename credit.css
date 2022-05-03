@@ -1,5 +1,6 @@
 body{
     background: url(./background.jpg);
+    backdrop-filter: blur(2px);
     color: #DDE;
     font-family: monospace;
     font-size: 35px;
