@@ -120,8 +120,8 @@ let allAttacks = {
     }
 }
 
-let p1 = JSON.parse(sessionStorage.getItem('player1'))
-let p2 = JSON.parse(sessionStorage.getItem('player2'))
+let p1 = JSON.parse(localStorage.getItem('player1'))
+let p2 = JSON.parse(localStorage.getItem('player2'))
 
 updateHp ( p1, p2);
 

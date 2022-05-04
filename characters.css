@@ -39,11 +39,23 @@ body{
 }
 #p1{
     border-right: solid #151515F7 3px;
-
+}
+#p1Name, #p2Name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #p1NameIn, #p2NameIn{
-    height: 15px;
-    width: 100px;
+    height: 28px;
+    padding: 3px 5px;
+    overflow-x: hidden;
+    min-width: 80px;
+    background-color: #444;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 .input{
     padding: 3px;

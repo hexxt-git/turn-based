@@ -88,6 +88,14 @@ warrior2.addEventListener('click', ()=>{
     document.getElementById('mage2').classList = 'type'
     document.getElementById('warrior2').classList = 'selectedType'
 })
+let p1NameIn = document.getElementById('p1NameIn')
+p1NameIn.addEventListener('click', ()=>{
+    p1NameIn.innerText = prompt('player 1 Name')
+})
+let p2NameIn = document.getElementById('p2NameIn')
+p2NameIn.addEventListener('click', ()=>{
+    p2NameIn.innerText = prompt('player 2 Name')
+})
 
 // ~~~~~~~~~ //
 
@@ -145,6 +153,6 @@ submit.addEventListener('click', ()=>{
     let p2 = new(character)( p2Name, p2Sprite, p2Type);
     console.log(JSON.stringify(p1))
     console.log(JSON.stringify(p2))
-    sessionStorage.setItem('player1', JSON.stringify(p1))
-    sessionStorage.setItem('player2', JSON.stringify(p2))
+    localStorage.setItem('player1', JSON.stringify(p1))
+    localStorage.setItem('player2', JSON.stringify(p2))
 })
